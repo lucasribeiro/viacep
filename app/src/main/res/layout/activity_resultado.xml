@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margem_padrao"
+    tools:context=".ui.Resultado">
+
+    <TextView
+        android:id="@+id/lblLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Logradouro:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLogradouro"
+        android:layout_width="260dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="108dp"
+        android:paddingBottom="16dp"
+        android:text="Rua Doutor Jamil Cury:"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblLog"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblComp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/complemento"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblLog" />
+
+    <TextView
+        android:id="@+id/tvComplemento"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:text="@string/complemento"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lblComp"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogradouro" />
+
+    <TextView
+        android:id="@+id/lblBairro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bairro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblComp" />
+
+    <TextView
+        android:id="@+id/tvBairro"
+        android:layout_width="260dp"
+        android:layout_height="43dp"
+        android:text="@string/bairro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblBairro"
+        app:layout_constraintTop_toBottomOf="@+id/tvComplemento" />
+
+    <TextView
+        android:id="@+id/lblLocalidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/localidade"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBairro" />
+
+    <TextView
+        android:id="@+id/tvLocalidade"
+        android:layout_width="260dp"
+        android:layout_height="43dp"
+        android:text="@string/localidade"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblLocalidade"
+        app:layout_constraintTop_toBottomOf="@+id/tvBairro" />
+
+    <TextView
+        android:id="@+id/lblUf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/uf"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblLocalidade" />
+
+    <TextView
+        android:id="@+id/tvUF"
+        android:layout_width="260dp"
+        android:layout_height="43dp"
+        android:text="@string/uf"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblUf"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocalidade" />
+
+    <Button
+        android:id="@+id/btnRetornar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retornar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

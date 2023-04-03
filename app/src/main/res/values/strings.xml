@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Trabalho Final - CEP</string>
+    <string name="digite_o_cep">Digite o CEP</string>
+    <string name="buscar_cep">Buscar CEP</string>
+    <string name="logradouro">Logradouro:</string>
+    <string name="complemento">Complemento:</string>
+    <string name="bairro">Bairro:</string>
+    <string name="localidade">Localidade:</string>
+    <string name="uf">UF:</string>
+    <string name="retornar">Retornar</string>
+</resources>
